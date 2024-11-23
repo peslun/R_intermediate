@@ -1,10 +1,13 @@
-# instructions ----
+# init ----
 
 install.packages("renv")
 # Initialize renv for the project
 library(renv)
 renv::init()
 ###say yes
+
+
+# instructions ----
 
 # Install required packages
 renv::install(c("ggplot2", "dplyr", "tidyr"))
@@ -32,3 +35,10 @@ data_summary <- data %>%
 
 # Print the summary table
 print(data_summary)
+
+# creation of a package ----
+renv::install("devtools")
+renv::snapshot()
+library(usethis)
+?create_package
+create_package("~/app/rstudio/Rfirstpackage")
