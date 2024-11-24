@@ -132,3 +132,15 @@ check_algorithm <- function(algorithm,arr,number){
 }
 
 check_algorithm(list(bubble_sort, insertion_sort, quick_sort), sample(1:1000), 10)
+
+# review exam from christina ----
+renv::install("remotes")
+remotes::install_github("chrtsa/imagealgorithm@master")
+library(imagealgorithm)
+ls("package:imagealgorithm")
+?filter_bitmap
+filter_bitmap
+filter_bw
+filter_bitmap("~/edu/phd/swe/0.course/day5.exam/Test image-1.jpg")
+filter_blue("~/edu/phd/swe/0.course/day5.exam/Test image-1.jpg")
+filter_bw("~/edu/phd/swe/0.course/day5.exam/Test image-1.jpg")
